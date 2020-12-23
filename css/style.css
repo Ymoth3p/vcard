@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Fira-Bold";
+  src: url("../fonts/FiraCodeBold/FiraCode-Bold.woff") format("woff"), url("../fonts/FiraCodeBold/FiraCode-Bold.woff2") format("woff2"), url("../fonts/FiraCodeBold/FiraCode-Bold.svg#FiraCode-Bold") format("svg"), url("../fonts/FiraCodeBold/FiraCode-Bold.eot"), url("../fonts/FiraCodeBold/FiraCode-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraCodeBold/FiraCode-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira-Light";
+  src: url("../fonts/FiraCodeLight/FiraCode-Light.woff") format("woff"), url("../fonts/FiraCodeLight/FiraCode-Light.woff2") format("woff2"), url("../fonts/FiraCodeLight/FiraCode-Light.svg#FiraCode-Light") format("svg"), url("../fonts/FiraCodeLight/FiraCode-Light.eot"), url("../fonts/FiraCodeLight/FiraCode-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraCodeLight/FiraCode-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira-Regular";
+  src: url("../fonts/FiraCodeRegular/FiraCode-Regular.woff") format("woff"), url("../fonts/FiraCodeRegular/FiraCode-Regular.woff2") format("woff2"), url("../fonts/FiraCodeRegular/FiraCode-Regular.svg#FiraCode-Regular") format("svg"), url("../fonts/FiraCodeRegular/FiraCode-Regular.eot"), url("../fonts/FiraCodeRegular/FiraCode-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraCodeRegular/FiraCode-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IndieFlower-Regular";
+  src: url("../fonts/IndieFlower/IndieFlower-Regular.woff") format("woff"), url("../fonts/IndieFlower/IndieFlower-Regular.woff2") format("woff2"), url("../fonts/IndieFlower/IndieFlower-Regular.svg#IndieFlower-Regular") format("svg"), url("../fonts/IndieFlower/IndieFlower-Regular.eot"), url("../fonts/IndieFlower/IndieFlower-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/IndieFlower/IndieFlower-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("../fonts/NexaBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa-Light";
+  src: url("../fonts/NexaLight.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  font-family: fira-light;
+  background-color: #343434;
+}
+body .orange {
+  color: #FF8C00;
+}
+body .cream {
+  color: #FDF5E6;
+}
+body nav.navbar {
+  font-size: 2.4rem;
+  padding: 0.5rem 10rem;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+}
+body nav.navbar .nav-link {
+  margin-right: 5vh;
+}
+body nav.navbar .navbar-brand {
+  font-size: 2.4rem;
+}
+body .col-md-6.darkS {
+  background-color: #343434;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+body .col-md-6.darkS .rightSideblock {
+  padding: 5rem;
+}
+body .col-md-6.darkS .rightSideblock .titles {
+  margin: 3rem 0;
+}
+body .col-md-6.darkS .rightSideblock .titles h1 {
+  font-family: Nexa-Bold;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+}
+body .col-md-6.darkS .rightSideblock .titles p {
+  padding: 0.5rem 0;
+  font-family: Nexa-Light;
+  font-size: 2.4rem;
+}
+body .col-md-6.darkS .rightSideblock .mainSection {
+  font-size: 1.8rem;
+}
+body .col-md-6.darkS .rightSideblock .mainSection p {
+  text-align: justify;
+}
+body .col-md-6.darkS .rightSideblock .logos {
+  color: #FDF5E6;
+  margin: 3rem 0;
+}
+body .col-md-6.darkS .rightSideblock .logos a {
+  text-decoration: none;
+  color: inherit;
+  margin: -0.5rem;
+}
+body .col-md-6.darkS .rightSideblock .logos a p {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3.5rem;
+  transition: all 0.3s ease;
+}
+body .col-md-6.darkS .rightSideblock .logos a p:hover {
+  transform: translateY(3px);
+  color: #FF8C00;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+body .col-md-6.creamS {
+  min-height: 100vh;
+  background-color: #FDF5E6;
+  font-family: IndieFlower-Regular;
+}
+body .col-md-6.creamS .f1 {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f1:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f2 {
+  position: absolute;
+  left: 19.6%;
+  top: 29%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f2:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f3 {
+  position: absolute;
+  left: 60.5%;
+  top: 85%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f3:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f4 {
+  position: absolute;
+  left: 83%;
+  top: 65%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f4:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f5 {
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f5:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f6 {
+  position: absolute;
+  left: 83%;
+  top: 20%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f6:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f7 {
+  position: absolute;
+  left: 60%;
+  top: 9%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f7:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f8 {
+  position: absolute;
+  left: 10%;
+  top: 14%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f8:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f9 {
+  position: absolute;
+  left: 27%;
+  top: 79%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f9:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f10 {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .f10:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+body .col-md-6.creamS .distorsion {
+  width: 44rem;
+  height: 44rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 0) and (max-width: 991px) {
+  body nav.navbar {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+  }
+  body nav.navbar .navbar-toggler {
+    margin-left: auto;
+  }
+  body nav.navbar span.cream {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  body .col-md-6.darkS .rightSideblock {
+    padding: 1rem;
+  }
+
+  body .col-md-6.creamS .distorsion {
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  body nav.navbar .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  body .col-md-6.creamS {
+    min-height: 0;
+    height: 30rem;
+  }
+
+  body .col-md-6.creamS .distorsion {
+    top: 50%;
+    bottom: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  body .col-md-6.darkS .rightSideblock {
+    padding: 4rem;
+  }
+  body .col-md-6.darkS .rightSideblock .titles {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1650px) and (max-width: 2000px) {
+  body .col-md-6.darkS .rightSideblock .titles {
+    padding: 2rem 10rem;
+  }
+  body .col-md-6.darkS .rightSideblock .mainSection p {
+    font-size: 2.4rem;
+    padding: 2rem 10rem;
+  }
+  body .col-md-6.darkS .rightSideblock .logos {
+    padding: 2rem 10rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

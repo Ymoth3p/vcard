@@ -1,0 +1,9 @@
+@mixin blink {
+    @keyframes blink {50% { color: transparent }}
+    .loader__dot { 
+        animation: 1s blink infinite;
+        color: $bg-dark;
+        margin: 0;
+    
+    }
+}

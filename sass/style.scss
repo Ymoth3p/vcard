@@ -1,0 +1,178 @@
+@import "fonts/fonts.scss";
+@import "components/variables.scss";
+@import "components/floats.scss";
+@import "components/animation.scss";
+@include fonts;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    font-family: fira-light;
+    background-color: $bg-dark;
+    .orange {
+        color: $orange;
+    }
+    .cream {
+        color: $bg-cream;
+    }
+
+    nav.navbar {
+        font-size: 2.4rem;
+        padding: 0.5rem 10rem;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        .nav-link {
+            margin-right: 5vh;
+        }
+        .navbar-brand {
+            font-size: 2.4rem;
+        }
+    }
+
+    .col-md-6.darkS {
+        background-color: $bg-dark;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        .rightSideblock {
+            padding: 5rem;
+            .titles {
+                margin: 3rem 0;
+
+                h1 {
+                    font-family: Nexa-Bold;
+                    font-size: 3.6rem;
+                    line-height: 2.6rem;
+                }
+                p {
+                    padding: 0.5rem 0;
+                    font-family: Nexa-Light;
+                    font-size: 2.4rem;
+                }
+            }
+
+            .mainSection {
+                font-size: 1.8rem;
+                p {
+                    text-align: justify;
+                }
+            }
+
+            .logos {
+                color: $bg-cream;
+                margin: 3rem 0;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    margin: -0.5rem;
+                    p {
+                        text-decoration: none;
+                        display: inline-block;
+                        &:hover {
+                            transform: translateY(3px);
+                            color: $orange;
+                            opacity: 0.8;
+                            transition: all 0.3s ease;
+                        }
+                        font-size: 3.5rem;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    .col-md-6.creamS {
+        min-height: 100vh;
+        background-color: $bg-cream;
+        font-family: IndieFlower-Regular;
+        //  Eléments flottants
+        @include floats;
+        .distorsion {
+            width: 44rem;
+            height: 44rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: $md) {
+    body nav.navbar {
+        .navbar-toggler {
+            margin-left: auto;
+        }
+        span.cream {
+            color: black;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        display: flex;
+        padding: 1rem 2rem;
+        justify-content: center;
+    }
+    body .col-md-6.darkS .rightSideblock {
+        padding: 1rem;
+    }
+    body .col-md-6.creamS .distorsion {
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+    }
+}
+@media screen and (min-width: 0) and (max-width: $sm) {
+    body nav.navbar .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    body .col-md-6.creamS {
+        min-height: 0;
+        height: 30rem;
+    }
+    body .col-md-6.creamS .distorsion {
+        top: 50%;
+        bottom: 50%;
+
+        width: 200px;
+        height: 200px;
+    }
+    body .col-md-6.darkS .rightSideblock {
+        .titles {
+            text-align: center;
+        }
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 1650px) and (max-width: 2000px) {
+    body .col-md-6.darkS .rightSideblock {
+        .titles {
+            padding: 2rem 10rem;
+        }
+
+        .mainSection p {
+            font-size: 2.4rem;
+            padding: 2rem 10rem;
+        }
+
+        .logos {
+            padding: 2rem 10rem;
+        }
+    }
+}
