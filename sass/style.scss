@@ -3,6 +3,7 @@
 @import "components/floats.scss";
 @import "components/animation.scss";
 @include fonts;
+@include blink;
 
 * {
     box-sizing: border-box;
@@ -109,6 +110,7 @@ body {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 1;
         }
     }
 }
@@ -167,7 +169,7 @@ body {
         }
 
         .mainSection p {
-            font-size: 2.4rem;
+            // font-size: 2.4rem;
             padding: 2rem 10rem;
         }
 
